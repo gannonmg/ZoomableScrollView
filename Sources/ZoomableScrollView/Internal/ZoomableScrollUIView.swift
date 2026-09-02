@@ -40,11 +40,6 @@ internal struct ZoomableScrollUIView<Content: View>: UIViewRepresentable {
         scrollView.addSubview(hosting.view)
         scrollView.contentLayoutGuide.pinSubviewToEdges(subview: hosting.view)
         publishViewportUpdate(from: scrollView)
-
-        // Debug backgrounds
-        hosting.view.backgroundColor = .systemPink
-        scrollView.backgroundColor = .systemOrange
-
         return scrollView
     }
 
