@@ -10,5 +10,5 @@ import SwiftUI
 extension EnvironmentValues {
     /// The enclosing scrollview's visible rect, in content coordinates.
     /// `zero` only until it is overidden in `ZoomableScrollUIView.makeUIView(context:)`
-    @Entry var scrollViewport: CGRect = .zero
+    @Entry public var scrollViewport: CGRect = .zero
 }

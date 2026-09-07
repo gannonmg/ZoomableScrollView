@@ -18,7 +18,7 @@ public struct ZoomResetCommit: Equatable {
     /// The viewport value that any consumer should use to update content based on visible bounds.
     let viewportAfterReset: CGRect
 
-    init(previousId: Int?, event: ZoomEvent) {
+    public init(previousId: Int?, event: ZoomEvent) {
         let contentScaleRatio = event.scale
         let scaledContentAnchor = event.contentAnchor * contentScaleRatio
 

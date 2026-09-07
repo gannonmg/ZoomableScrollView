@@ -9,8 +9,9 @@ import CoreGraphics
 
 /// Transmitted to the consuming view, allowing it to update it's content appropriately before resetting the zoomscale to 1.
 public struct ZoomEvent {
-    let scale: CGFloat
-    let didEnd: Bool
+    public let scale: CGFloat
+    public let didEnd: Bool
+
     let contentAnchor: CGPoint
     /// The point in the zoomable content’s own coordinate space that should remain visually stable across the zoom commit.
     let viewportAnchor: CGPoint
