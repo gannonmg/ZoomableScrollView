@@ -13,6 +13,7 @@ import Foundation
 ///
 /// It is necessary to group the zoom reset and the viewport update publishing to ensure the Content view is all refreshed atomically.
 public struct ZoomResetCommit: Equatable {
+    public var id: Int { request.id }
     /// The immediate requests that UIKit needs to fulfill: resetting zoomScale to 1 and updating the content offset.
     let request: ZoomResetRequest
     /// The viewport value that any consumer should use to update content based on visible bounds.
