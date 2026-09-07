@@ -22,7 +22,7 @@ public struct ZoomableScrollView<Content: View>: View {
         showsScrollIndicators: Bool = false,
         onZoomEvent: ((ZoomEvent) -> Void)? = nil,
         zoomResetCommit: ZoomResetCommit? = nil,
-        content: @escaping () -> Content
+        @ContentBuilder content: @escaping () -> Content
     ) {
         self.zoomRange = zoomRange
         self.showsScrollIndicators = showsScrollIndicators
