@@ -11,6 +11,7 @@ import CoreGraphics
 /// and ensure it is stable between scale resets.
 struct ZoomResetRequest: Equatable {
     let id: Int
+    let targetZoomScale: CGFloat
     /// The point in the zoomable content’s own coordinate space that should remain visually stable across the zoom commit.
     /// Derived from `ZoomEvent.contentAnchor` updated with the newly applied content scale
     let anchorInContent: CGPoint

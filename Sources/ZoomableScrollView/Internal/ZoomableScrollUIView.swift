@@ -140,7 +140,7 @@ internal struct ZoomableScrollUIView<Content: View>: UIViewRepresentable {
 
             // Block update reports from zoom interactions until we are done with our reset
             isApplyingZoomReset = true
-            scrollView.setZoomScale(1, animated: false)
+            scrollView.setZoomScale(request.targetZoomScale, animated: false)
             scrollView.contentOffset = request.anchorInContent - request.anchorInViewport
             isApplyingZoomReset = false
 
