@@ -22,8 +22,8 @@ extension CGRect {
     public var center: CGPoint { CGPoint(x: midX, y: midY) }
 
     // MARK: Debug
-    public func alignedDebugString(width: Int = 6, decimals: Int = 2) -> String {
-        let format = "%\(width).\(decimals)f"
+    public func alignedDebugString(width strWidth: Int = 6, decimals: Int = 2) -> String {
+        let format = "%\(strWidth).\(decimals)f"
         let xStr = String(format: format, origin.x)
         let yStr = String(format: format, origin.y)
         let wStr = String(format: format, size.width)
